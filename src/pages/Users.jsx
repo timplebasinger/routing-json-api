@@ -7,7 +7,8 @@ const Users = () => {
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/users')
             .then(res => res.json())
-            .then(users => setUsers(users));
+            .then(users => setUsers(users))
+            .catch(err => console.log(err))
     }, [])
 
 

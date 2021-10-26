@@ -6,10 +6,12 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Users from './pages/Users';
 import UserDetails from './pages/UserDetails';
+import Navbar from './pages/Navbar';
 
 const App = () => {
     return (
         <BrowserRouter>
+        <Navbar />
             <Switch>
                 <Route exact path="/">
                     <Home />
